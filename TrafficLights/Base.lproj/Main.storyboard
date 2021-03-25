@@ -17,21 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpp-Rm-Ui5">
-                                <rect key="frame" x="143" y="320" width="128" height="128"/>
+                                <rect key="frame" x="143" y="252" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fpp-Rm-Ui5" secondAttribute="height" multiplier="1:1" id="NJL-ch-8NJ"/>
+                                </constraints>
                             </view>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAC-3Q-Lnd">
-                                <rect key="frame" x="143" y="478" width="128" height="128"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <rect key="frame" x="143" y="410" width="128" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EAC-3Q-Lnd" secondAttribute="height" multiplier="1:1" id="6P7-UP-xA7"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CZ-pA-CIr">
                                 <rect key="frame" x="107" y="768" width="200" height="36"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6qL-sp-XhS"/>
+                                    <constraint firstAttribute="width" secondItem="1CZ-pA-CIr" secondAttribute="height" multiplier="50:9" id="x3Z-Tj-4LH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                <state key="normal" title="NEXT">
+                                <state key="normal" title="START">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                 </state>
@@ -40,28 +46,28 @@
                                 </connections>
                             </button>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-SS-awm">
-                                <rect key="frame" x="143" y="162" width="128" height="128"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <rect key="frame" x="143" y="94" width="128" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fYN-SS-awm" secondAttribute="height" multiplier="1:1" id="HwF-i6-qEF"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fYN-SS-awm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="BdG-ky-CvA"/>
-                            <constraint firstItem="Fpp-Rm-Ui5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ckl-Nb-mPl"/>
-                            <constraint firstItem="1CZ-pA-CIr" firstAttribute="top" secondItem="EAC-3Q-Lnd" secondAttribute="bottom" constant="162" id="DeK-uB-r25"/>
-                            <constraint firstItem="EAC-3Q-Lnd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWx-yZ-nhP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1CZ-pA-CIr" secondAttribute="trailing" constant="107" id="JIW-Tp-t1W"/>
-                            <constraint firstItem="Fpp-Rm-Ui5" firstAttribute="width" secondItem="fYN-SS-awm" secondAttribute="width" id="Mw2-AA-2JT"/>
-                            <constraint firstItem="EAC-3Q-Lnd" firstAttribute="top" secondItem="Fpp-Rm-Ui5" secondAttribute="bottom" constant="30" id="NKN-mU-zkf"/>
-                            <constraint firstItem="fYN-SS-awm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SYi-nH-UZ0"/>
-                            <constraint firstItem="1CZ-pA-CIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Smv-Ho-XOB"/>
-                            <constraint firstItem="Fpp-Rm-Ui5" firstAttribute="top" secondItem="fYN-SS-awm" secondAttribute="bottom" constant="30" id="YNi-DV-bKI"/>
-                            <constraint firstItem="EAC-3Q-Lnd" firstAttribute="height" secondItem="fYN-SS-awm" secondAttribute="height" id="cyT-gp-7gR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1CZ-pA-CIr" secondAttribute="bottom" constant="58" id="iN7-zN-OhX"/>
-                            <constraint firstItem="fYN-SS-awm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="oul-Po-D9N"/>
-                            <constraint firstItem="EAC-3Q-Lnd" firstAttribute="width" secondItem="fYN-SS-awm" secondAttribute="width" id="sxp-x8-8hP"/>
-                            <constraint firstItem="Fpp-Rm-Ui5" firstAttribute="height" secondItem="fYN-SS-awm" secondAttribute="height" id="zcR-f7-TCI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1CZ-pA-CIr" secondAttribute="bottom" constant="58" id="AYv-DG-Qt0"/>
+                            <constraint firstItem="EAC-3Q-Lnd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CSg-bw-PjC"/>
+                            <constraint firstItem="1CZ-pA-CIr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FYj-38-S1C"/>
+                            <constraint firstItem="fYN-SS-awm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="OeP-Mk-wXL"/>
+                            <constraint firstItem="1CZ-pA-CIr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:112" id="RyT-Ik-K54"/>
+                            <constraint firstItem="Fpp-Rm-Ui5" firstAttribute="top" secondItem="fYN-SS-awm" secondAttribute="bottom" constant="30" id="WIX-80-fub"/>
+                            <constraint firstItem="EAC-3Q-Lnd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:7" id="a7c-QH-zoJ"/>
+                            <constraint firstItem="Fpp-Rm-Ui5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:7" id="cVS-BZ-UI6"/>
+                            <constraint firstItem="fYN-SS-awm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oGC-zC-xeo"/>
+                            <constraint firstItem="EAC-3Q-Lnd" firstAttribute="top" secondItem="Fpp-Rm-Ui5" secondAttribute="bottom" constant="30" id="owT-F8-cby"/>
+                            <constraint firstItem="fYN-SS-awm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:7" id="pda-RT-dF5"/>
+                            <constraint firstItem="Fpp-Rm-Ui5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wLF-5Y-5fp"/>
                         </constraints>
                     </view>
                     <connections>

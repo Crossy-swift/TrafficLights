@@ -10,43 +10,50 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var redLightView: UIView!
-    
     @IBOutlet var yellowLightView: UIView!
-    
     @IBOutlet var greenLightView: UIView!
     
     @IBOutlet var changeSignalButton: UIButton!
+    
+    private let lightIsOn: CGFloat = 1
+    private let lightIsOff: CGFloat = 0.3
     
     private var buttonPressCount = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        greenLightView.layer.cornerRadius = 60
-        yellowLightView.layer.cornerRadius = 60
-        redLightView.layer.cornerRadius = 60
         changeSignalButton.layer.cornerRadius = 15
         
-        
+    }
+    
+    override func viewWillLayoutSubviews() {
+        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
     }
 
     @IBAction func changeSignailButtonPressed() {
         
+        if changeSignalButton.currentTitle == "START" {
+        changeSignalButton.setTitle("NEXT", for: .normal)
+        }
+        
         switch buttonPressCount {
         case 1:
-            greenLightView.alpha = 1
+            greenLightView.alpha = lightIsOn
         case 2:
-            greenLightView.alpha = 0.3
-            yellowLightView.alpha = 1
+            greenLightView.alpha = lightIsOff
+            yellowLightView.alpha = lightIsOn
         case 3:
-            greenLightView.alpha = 0.3
-            yellowLightView.alpha = 0.3
-            redLightView.alpha = 1
+            greenLightView.alpha = lightIsOff
+            yellowLightView.alpha = lightIsOff
+            redLightView.alpha = lightIsOn
         default:
-            greenLightView.alpha = 0.3
-            yellowLightView.alpha = 0.3
-            redLightView.alpha = 0.3
-            buttonPressCount = 0
+            greenLightView.alpha = lightIsOn
+            yellowLightView.alpha = lightIsOff
+            redLightView.alpha = lightIsOff
+            buttonPressCount = 1
         }
         buttonPressCount += 1
     }

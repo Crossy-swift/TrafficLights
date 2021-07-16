@@ -46,12 +46,9 @@ class ViewController: UIViewController {
             greenLightView.alpha = lightIsOff
             yellowLightView.alpha = lightIsOn
         case 3:
-            greenLightView.alpha = lightIsOff
             yellowLightView.alpha = lightIsOff
             redLightView.alpha = lightIsOn
         default:
-            greenLightView.alpha = lightIsOff
-            yellowLightView.alpha = lightIsOff
             redLightView.alpha = lightIsOff
             changeSignalButton.setTitle("START", for: .normal)
             buttonPressCount = 0
